@@ -14,6 +14,9 @@ class Course {
 
         if (numberOfStudents > 0) {
             this.numberOfStudents = numberOfStudents;
+
+            totalStudents = totalStudents + numberOfStudents;
+            totalCourses = totalCourses + 1;
         } else {
             System.out.println(
                     "The number of students must be greater than zero."
