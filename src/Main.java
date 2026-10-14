@@ -1,5 +1,14 @@
 public class Main {
     public static void main(String[] args) {
+        Course course1 = new Course("Java", 50);
+        Course course2 = new Course("Networking", 40);
+        Course course3 = new Course("Database", 80);
+
+        course1.displayStatistics(30);
+        course2.displayStatistics(27);
+        course3.displayStatistics(19);
+
+        Course.displayUniversityStatistics();
     }
 }
 
@@ -47,10 +56,10 @@ class Course {
             );
             System.out.println("-----------------");
         }
-        public static void displayUniversityStatistics() {
-            System.out.println("University-wide Statistics");
-            System.out.println("Total Courses: " + totalCourses);
-            System.out.println("Total Students in IUEA: " + totalStudents);
-        }
+    }
+    public static void displayUniversityStatistics() {
+        System.out.println("University-wide Statistics");
+        System.out.println("Total Courses: " + totalCourses);
+        System.out.println("Total Students in IUEA: " + totalStudents);
     }
 }
