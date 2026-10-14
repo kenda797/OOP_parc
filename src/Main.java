@@ -6,6 +6,8 @@ public class Main {
 class Course {
     String courseName;
     int numberOfStudents;
+    static int totalStudents = 0;
+    static int totalCourses = 0;
 
     public Course(String courseName, int numberOfStudents) {
         this.courseName = courseName;
