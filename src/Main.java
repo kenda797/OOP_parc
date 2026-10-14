@@ -6,4 +6,9 @@ public class Main {
 class Course {
     String courseName;
     int numberOfStudents;
+    
+    public Course(String courseName, int numberOfStudents) {
+        this.courseName = courseName;
+        this.numberOfStudents = numberOfStudents;
+    }
 }
