@@ -4,4 +4,6 @@ public class Main {
 }
 
 class Course {
+    String courseName;
+    int numberOfStudents;
 }
