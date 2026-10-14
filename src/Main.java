@@ -6,9 +6,17 @@ public class Main {
 class Course {
     String courseName;
     int numberOfStudents;
-    
+
     public Course(String courseName, int numberOfStudents) {
         this.courseName = courseName;
-        this.numberOfStudents = numberOfStudents;
+
+        if (numberOfStudents > 0) {
+            this.numberOfStudents = numberOfStudents;
+        } else {
+            System.out.println(
+                    "The number of students must be greater than zero."
+            );
+            this.numberOfStudents = 0;
+        }
     }
 }
