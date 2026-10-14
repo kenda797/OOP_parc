@@ -47,5 +47,10 @@ class Course {
             );
             System.out.println("-----------------");
         }
+        public static void displayUniversityStatistics() {
+            System.out.println("University-wide Statistics");
+            System.out.println("Total Courses: " + totalCourses);
+            System.out.println("Total Students in IUEA: " + totalStudents);
+        }
     }
 }
